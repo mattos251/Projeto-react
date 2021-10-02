@@ -36,11 +36,11 @@ const servicos = [
 
 export default function Servicos(){
     return <TelaPadrao>
-        <Text style = {estilos.title}>Serviços</Text>
-        <FlatList
-            data = {servicos}
-            renderItem = {({item}) => <Item {...item} />} 
-            keyExtractor = {(item) => String(item.id)}
-        />
-        </TelaPadrao>
+    
+            <FlatList
+                data = {servicos}
+                renderItem = {({item}) => <Item {...item} />} 
+                keyExtractor = {(item) => String(item.id)}
+            />
+    </TelaPadrao>
 }
