@@ -6,6 +6,7 @@ import Item from './Item'
 import estilos from './Item/estilos'
 import TelaPadrao from '../../componente/TelaPadrao'
 
+
 const servicos = [
     {
         id:1,
@@ -36,8 +37,8 @@ const servicos = [
 
 export default function Servicos(){
     return <TelaPadrao>
-    
-            <FlatList
+
+            <FlatList 
                 data = {servicos}
                 renderItem = {({item}) => <Item {...item} />} 
                 keyExtractor = {(item) => String(item.id)}
